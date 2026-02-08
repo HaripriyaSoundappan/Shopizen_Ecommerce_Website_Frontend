@@ -2,7 +2,7 @@
 import React, { useMemo, useState, useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-import FilterSidebar from "../../../components/FilterSideBar/FilterSideBar";
+import FilterSidebar from "../../../components/FilterSidebar/FilterSidebar";
 import ProductCard from "../../../components/ProductCard/ProductCard";
 import productsData from "../../../data/products/products.json"; // JSON file
 
@@ -25,7 +25,7 @@ const MidSeasonSale = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [showFilter, setShowFilter] = useState(false);
 
-  const [products, setProducts] = useState([]); 
+  const [products, setProducts] = useState([]);
   const { user } = useContext(AuthContext);
   const { comparisonList, toggleCompare } = useComparison();
   const { showToast } = useToast();
@@ -51,14 +51,18 @@ const MidSeasonSale = () => {
       result = result.filter((p) => filters.category.includes(p.category));
     }
     if (filters.subCategory.length) {
-      result = result.filter((p) => filters.subCategory.includes(p.subCategory));
+      result = result.filter((p) =>
+        filters.subCategory.includes(p.subCategory),
+      );
     }
     if (filters.brand.length) {
       result = result.filter((p) => filters.brand.includes(p.brand));
     }
     if (filters.price.length) {
       result = result.filter((p) =>
-        filters.price.some(([min, max]) => p.salePrice >= min && p.salePrice <= max)
+        filters.price.some(
+          ([min, max]) => p.salePrice >= min && p.salePrice <= max,
+        ),
       );
     }
     if (filters.rating.length) {
@@ -66,14 +70,19 @@ const MidSeasonSale = () => {
     }
     if (filters.stock.length) {
       result = result.filter((p) =>
-        filters.stock.some((s) => (s ? p.stock > 0 : p.stock === 0))
+        filters.stock.some((s) => (s ? p.stock > 0 : p.stock === 0)),
       );
     }
 
     // Sorting
-    if (sortBy === "priceLowHigh") result.sort((a, b) => a.salePrice - b.salePrice);
-    else if (sortBy === "priceHighLow") result.sort((a, b) => b.salePrice - a.salePrice);
-    else if (sortBy === "popularity") result.sort((a, b) => (b.reviews?.length || 0) - (a.reviews?.length || 0));
+    if (sortBy === "priceLowHigh")
+      result.sort((a, b) => a.salePrice - b.salePrice);
+    else if (sortBy === "priceHighLow")
+      result.sort((a, b) => b.salePrice - a.salePrice);
+    else if (sortBy === "popularity")
+      result.sort(
+        (a, b) => (b.reviews?.length || 0) - (a.reviews?.length || 0),
+      );
 
     return result;
   }, [filters, sortBy, products]);

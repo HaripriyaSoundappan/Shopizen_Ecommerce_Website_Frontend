@@ -30,13 +30,13 @@ const FilterSidebar = ({ filters, setFilters, products = [] }) => {
     setFilters((prev) => {
       if (name === "price") {
         const exists = prev.price.some(
-          (r) => r[0] === value[0] && r[1] === value[1]
+          (r) => r[0] === value[0] && r[1] === value[1],
         );
         return {
           ...prev,
           price: exists
             ? prev.price.filter(
-                (r) => !(r[0] === value[0] && r[1] === value[1])
+                (r) => !(r[0] === value[0] && r[1] === value[1]),
               )
             : [...prev.price, value],
         };
@@ -67,7 +67,7 @@ const FilterSidebar = ({ filters, setFilters, products = [] }) => {
   // Unique brands with search
   const brands = useMemo(() => {
     return [...new Set(products.map((p) => p.brand))].filter((b) =>
-      b.toLowerCase().includes(brandSearch.toLowerCase())
+      b.toLowerCase().includes(brandSearch.toLowerCase()),
     );
   }, [products, brandSearch]);
 
@@ -82,7 +82,7 @@ const FilterSidebar = ({ filters, setFilters, products = [] }) => {
       { label: "In Stock", value: true },
       { label: "Out of Stock", value: false },
     ],
-    []
+    [],
   );
 
   return (
@@ -193,7 +193,7 @@ const FilterSidebar = ({ filters, setFilters, products = [] }) => {
                 type="checkbox"
                 id={`price-${i}`}
                 checked={filters.price.some(
-                  (r) => r[0] === option.range[0] && r[1] === option.range[1]
+                  (r) => r[0] === option.range[0] && r[1] === option.range[1],
                 )}
                 onChange={() => handleCheckbox("price", option.range)}
               />
