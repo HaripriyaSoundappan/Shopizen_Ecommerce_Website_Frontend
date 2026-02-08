@@ -6,7 +6,7 @@ import ProgressBar from "../../../components/cart/ProgressBar";
 import CartItem from "../../../components/cart/CartItem";
 import TotalSummary from "../../../components/cart/TotalSummary";
 
-import "./orderPage.css";
+import "./OrderPage.css";
 
 const CartPage = () => {
     const { cart } = useContext(CartContext);
