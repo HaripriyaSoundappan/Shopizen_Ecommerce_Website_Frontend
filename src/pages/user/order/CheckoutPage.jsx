@@ -4,7 +4,7 @@ import { CartContext } from "../../../components/context/CartContext";
 import { AuthContext } from "../../../components/context/AuthContext";
 import ProgressBar from "../../../components/cart/ProgressBar";
 import CheckoutForm from "../../../components/cart/CheckoutForm";
-import "./orderPage.css";
+import "./OrderPage.css";
 
 const CheckoutPage = () => {
   const { cart, clearCart } = useContext(CartContext);
