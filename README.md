@@ -108,8 +108,15 @@ A fully structured and responsive E-commerce web application built using React, 
 
 ## 🔗 Live Demo
 
-👉https://shopizen.vercel.app/
+👉 https://shopizen.vercel.app/
+<!--
+Demo:
+User Email: haripriya@email.com
+Password: !Priya234
 
+Admin Email: admin@shopizen.com
+Password: !SuperAdmin123
+-->
 ---
 
 ## 📸 Screenshots
