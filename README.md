@@ -1,18 +1,154 @@
-# React + Vite
+🛒 E-Commerce Web Application (Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully structured and responsive E-commerce web application built using React, HTML, CSS, and Bootstrap. This project simulates a real-world online shopping platform with multiple user flows including product browsing, cart management, user authentication, and admin functionalities.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+### 🏠 General Pages
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+* Home Page
+* About Page
+* Contact Page
+* FAQ
+* Terms & Conditions
+* Privacy Policy
 
-Note: This will impact Vite dev & build performances.
+---
 
-## Expanding the ESLint configuration
+### 🔐 Authentication
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* Login & Registration
+* Forgot Password & Reset Password
+
+---
+
+### 🛍️ Product Module
+
+* Product Listing
+* Product Details Page
+* Category & Brand Filtering
+* Search Functionality
+* Product Comparison
+* Reviews & Ratings
+* Featured Products
+* New Arrivals
+* Best Selling Products
+* Deals & Offers
+
+---
+
+### 🛒 Cart & Orders
+
+* Add to Cart
+* Checkout Process
+* Order Success Page
+* Order History
+* Live Order Tracking
+* Cancel / Return Orders
+* Invoice Download
+
+---
+
+### 👤 User Account
+
+* Dashboard
+* Edit Profile
+* Change Password
+* Address Management
+* Wishlist
+* Notifications
+* Wallet / Credits
+* Contact / Chat Support
+
+---
+
+### 🛠️ Admin Panel
+
+* Admin Dashboard
+* Product Management (Add/Edit/Delete)
+* Category & Brand Management
+* Order Management & Status Updates
+* User Management (Block/Delete)
+* Review Moderation
+* Notification System
+* Refund Handling
+* Sales Reports
+
+---
+
+### ⚙️ System & Utility Pages
+
+* 404 Page Not Found
+* 403 Access Denied
+* Maintenance Page
+* Session Expired Page
+* Loading / Preloader
+
+---
+
+## 🛠️ Tech Stack
+
+* Frontend: React.js
+* Styling: HTML, CSS, Bootstrap
+* Version Control: Git & GitHub
+
+---
+
+## 📱 Key Highlights
+
+* Fully responsive design (Mobile + Desktop)
+* Clean and reusable UI components
+* Real-world e-commerce structure (63 pages)
+* User-friendly navigation and layout
+* Scalable project architecture
+
+---
+
+## 🔗 Live Demo
+
+👉https://shopizen.vercel.app/
+
+---
+
+## 📸 Screenshots
+
+<img width="1366" height="645" alt="Shopizen-3" src="https://github.com/user-attachments/assets/21c5927e-3dfd-4090-9a96-52507e5ca30b" />
+<img width="1366" height="642" alt="Shopizen-1" src="https://github.com/user-attachments/assets/e9562b21-e581-4688-b34d-d8852b8fee80" />
+<img width="1366" height="649" alt="Shopizen-2" src="https://github.com/user-attachments/assets/b08714cc-c454-40ad-b4ae-a85c52ea00e6" />
+<img width="1366" height="645" alt="Shopizen-4" src="https://github.com/user-attachments/assets/f838d550-d1d8-4eb0-ac83-e25d0dc2c6f5" />
+<img width="1366" height="642" alt="Shopizen-5" src="https://github.com/user-attachments/assets/d779d9b2-7125-4289-ac18-68d99e908cb9" />
+---
+
+## 📂 Project Structure
+
+* Components
+* Pages
+* Assets
+* Styles
+
+---
+
+## 💡 Future Improvements
+
+* Backend integration (Node.js / Firebase)
+* Payment gateway integration
+* Authentication with database
+* API integration
+
+---
+
+## 👩‍💻 Author
+
+Haripriya S
+Frontend Developer | React | Digital Marketing Enthusiast
+
+---
+
+## 📬 Contact
+
+* LinkedIn: https://www.linkedin.com/in/haripriyasoundappan
+* GitHub: https://github.com/HaripriyaSoundappan
+
+---
